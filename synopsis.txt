@@ -12,4 +12,5 @@ admin would link the teacher id or user name with the respective class
 now every time the function will accesss a particular id ,  it will automatically open the linked class profile for the user
 
 
-hi
+byeeee
+bata to de change sync hua ki nahis
