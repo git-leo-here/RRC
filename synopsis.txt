@@ -1,0 +1,12 @@
+The program will take the following inputs from the User Input
+For teachers:
+	Class details (Number of students, Roll no. wise names)
+	Subjects (subject name, total marks)
+	Roll no. wise record data: - (sub1, sub2, …)
+
+For admin:
+	Option to add teacher --> Enter teacher id, name, class, password. 
+	Option to delete teacher -->Enter teacher id to delete
+
+admin would link the teacher id or user name with the respective class
+now every time the function will accesss a particular id ,  it will automatically open the linked class profile for the user
