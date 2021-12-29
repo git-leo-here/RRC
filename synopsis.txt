@@ -1,13 +1,17 @@
 The program will take the following inputs from the User Input
+
 For teachers:
 	Class details (Number of students, Roll no. wise names)
 	Subjects (subject name, total marks)
 	Roll no. wise record data: - (sub1, sub2, …)
 
 For admin:
-	Option to add teacher --> Enter teacher id, name, class, password. 
-	Option to delete teacher -->Enter teacher id to delete
+	1. Option to add teacher --> Enter teacher id, name, class, password 
+	2. Option to delete teacher --> Enter teacher id to delete
+	3. Option to add student --> Enter student id, name, DOB , Class , Sec
+	4. Add class --> Enter class name , Class teacher ID ,  subjects ( Phy , Chem , Mat , P.E , Comp )
 
+dict = { 'Phy' : 'Physics', 'Chem' : 'Chemistry', 'Mat' : 'Maths', 'P.E' : 'PE', 'Comp' : 'Computer' }
 admin would link the teacher id or user name with the respective class
 now every time the function will accesss a particular id ,  it will automatically open the linked class profile for the user
 haar  subject teacher apna data class teacher ko degi and data entry ka kaam sirf class teacher karegi for minimum work loads
