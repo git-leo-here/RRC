@@ -1,9 +1,9 @@
 The program will take the following inputs from the User Input
 
 For teachers:
-	1. Option to add link roll number to admn no.- ( Run a while loop )
-	    a) Update all students 
-		b) Update selected student
+	1. Option to add link roll number to admn no.- 
+	    a) Update all students ( Run a while loop )
+		b) Update selected student (we are taking the input)
 	2. Option to add marks of students
 	Class details (Number of students, Roll no. wise names)
 	Subjects (subject name, total marks)
