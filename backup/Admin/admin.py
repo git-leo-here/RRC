@@ -53,16 +53,16 @@ Enter 4 : To Add Class
                                 print("=> {}".format(students)) 
 
         elif(userInput == 3): #This Option Will ADD Student
-               import csv
-               with open('student.txt','a',newline="") as fo: #open the file in append mode (add to file, we don't wish to overwrite!)
-                Writer=csv.writer(fo) #fo = file out (this can be called anything you like)
-                Studentid=input("Enter Student ID:")
-                Studentname=input("Enter firstname:")
-                DOB=input("Enter DOB:")
-                Class=int(input("class"))
-                Sec=str(input("Section"))
-                Writer.writerow([Studentid,Studentname,DOB,Class,Sec])
-                print("Record has been written to file")
+                import csv
+                with open('student.txt','a',newline="") as fo: #open the file in append mode (add to file, we don't wish to overwrite!)
+                        Writer=csv.writer(fo) #fo = file out (this can be called anything you like)
+                        Studentid=input("Enter Student ID:")
+                        Studentname=input("Enter firstname:")
+                        DOB=input("Enter DOB:")
+                        Class=int(input("class"))
+                        Sec=str(input("Section"))
+                        Writer.writerow([Studentid,Studentname,DOB,Class,Sec])
+                        print("Record has been written to file")
         
         elif(userInput == 4): #This Option Will ADD Class
                 import csv
@@ -73,7 +73,7 @@ Enter 4 : To Add Class
                         Classname=input("Enter firstname:")
                         Writer.writerow([Studentid,Teacherid,Classname])
                         print("Record has been written to file")
-                                                
+                        
 #brought to you by code-projects.org
 manageStudent()
 
@@ -87,6 +87,6 @@ def runAgain(): #Making Runable Problem1353
                 manageStudent()
                 runAgain()
         else:
-            quit(bye) #Print GoodBye Message And Exit The Program
+                quit(bye) #Print GoodBye Message And Exit The Program
 
 runAgain()
