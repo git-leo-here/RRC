@@ -8,10 +8,10 @@
 			"server": "localhost",
 			"port": 3306,
 			"driver": "MySQL",
-			"password": "superpassword",
-			"username": "root",
+			"password": "password",
+			"username": "projectuser",
 			"name": "localhost",
-			"database": "prac_db"
+			"database": "School"
 		}
 	]
 }
