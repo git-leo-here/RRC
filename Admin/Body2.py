@@ -73,7 +73,7 @@ Enter 4 : To Add Class
                         Classname=input("Enter firstname:")
                         Writer.writerow([Studentid,Teacherid,Classname])
                         print("Record has been written to file")
-                                                
+                        
 #brought to you by code-projects.org
 manageStudent()
 
@@ -87,6 +87,6 @@ def runAgain(): #Making Runable Problem1353
                 manageStudent()
                 runAgain()
         else:
-            quit(bye) #Print GoodBye Message And Exit The Program
+                quit(bye) #Print GoodBye Message And Exit The Program
 
 runAgain()              

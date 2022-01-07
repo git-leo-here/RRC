@@ -1,8 +1,8 @@
 The program will take the following inputs from the User Input
 
 For teachers:
-	1. Option to add link roll number to admn no.- ( Run a while loop )
-	    a) Update all students 
+	1. Option to link roll number to admn no.- ( Run a while loop )
+		a) Update all students 
 		b) Update selected student
 	2. Option to add marks of students
 	Class details (Number of students, Roll no. wise names)
@@ -21,3 +21,8 @@ now every time the function will accesss a particular id ,  it will automaticall
 
 PCMB => BCMP
 PMCB => BCMP
+
+i=0
+while True:
+	print("Enter admission number for roll " + i + " : ")
+	i+=1
