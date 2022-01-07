@@ -14,11 +14,11 @@ def manageStudent(): #Function For The Student Management System
 	#Printing Welcome Message And options For This Program
 	print(""" 
 
-  ---------------------
- |===================== 
- |======== data========|
- |=====================
-  ---------------------
+  ------------------------------------------------------
+ |======================================================| 
+ |======== Welcome To Student Management System	========|
+ |======================================================|
+  ------------------------------------------------------
 
 Enter 1 : To View Student's List 
 Enter 2 : To Add New Student 
