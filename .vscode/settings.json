@@ -8,10 +8,10 @@
 			"server": "localhost",
 			"port": 3306,
 			"driver": "MySQL",
-			"password": "password",
+			"name": "project",
 			"username": "projectuser",
-			"name": "localhost",
-			"database": "School"
+			"password": "password",
+			"database": "school"
 		}
 	]
 }
