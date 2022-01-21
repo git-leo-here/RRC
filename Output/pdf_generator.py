@@ -1,9 +1,8 @@
-from msilib.schema import Class
-from re import M
+
 from reportlab.pdfgen import canvas
 import os
 from reportlab.lib import colors
-from reportlab.lib.styles import ParagraphStyle,getSampleStyleSheet
+from reportlab.lib.styles import getSampleStyleSheet
 from reportlab.platypus import Paragraph , Frame , Table , TableStyle
 
 
