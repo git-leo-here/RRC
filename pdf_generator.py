@@ -12,7 +12,7 @@ school_data = ['Affiliated to CBSE',
                'Near Science Centre , Rajnagar , Raichok - 12',  ]
 
 
-def hello_world(roll_no):
+def runPDF(roll_no):
     c = canvas.Canvas("{}.pdf".format(roll_no),bottomup=0)
     def drawSchoolData():
         c.setFont("Helvetica", 24)
@@ -103,7 +103,6 @@ def hello_world(roll_no):
     c.showPage()
     c.save()
 
-
 def delete_file():
     try:
         os.remove("{}".format(roll_no))
@@ -112,9 +111,3 @@ def delete_file():
 
 delete_file()
 hello_world(1)
-
-# for i in range(class_stregth):
-#     hello_world(i+1)
-
-
-

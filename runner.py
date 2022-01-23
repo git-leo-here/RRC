@@ -1,6 +1,8 @@
 import mysql.connector 
 import admin
 import teacher
+import pdf_generator
+import os
 
 usr = input("Enter mySQL Username: ") #Taking Username From User
 pwd =  input("Enter mySQL  Password: ")
@@ -21,8 +23,10 @@ print("""
   ------------------------------------------------------
 
 Enter 1 : Run as admin
-Enter 2 : Run as teacher  
+Enter 2 : Run as teacher
+Enter 3 : Print results  
                 """)
+
     try: #Using Exceptions For Validation
             userInput = int(input("Please Select An Above Option: ")) #Will Take Input From User
     except ValueError:
@@ -35,3 +39,10 @@ Enter 2 : Run as teacher
 
     elif userInput == 2:
         teacher.runTeacher()
+
+    elif userInput == 3:
+        classSec = input("Enter Class and Section: ")
+        os.mkdir(classSec)
+        # change cwd to the new directory made in previous line
+        for i in range(class_stregth):
+            pdf_generator.runPDF(i+1)
