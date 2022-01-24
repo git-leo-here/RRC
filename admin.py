@@ -1,6 +1,5 @@
 def runAdmin():
-        import os
-        import platform
+
         import mysql.connector
 
         usr = input("Enter mySQL Username: ") #Taking Username From User
@@ -9,15 +8,15 @@ def runAdmin():
         def addTeacher(Teachername,ClassSec):
                 mydb = mysql.connector.connect(host="localhost",user= usr ,passwd= pwd, database="school")
                 cursor = mydb.cursor()
-                cursor.execute("INSERT INTO adminTeacher (Name,ClassSec) VALUES ({Teachername},{ClassSec}) ;")
+                cursor.execute("INSERT INTO adminTeacher (Name,ClassSec) VALUES ('{Teachername}','{ClassSec}') ;".format(Teachername=Teachername,ClassSec=ClassSec))
                 create_exam_tables(ClassSec)
                 mydb.commit()
 
         def create_exam_tables(ClassSec):
                 mydb = mysql.connector.connect(host="localhost",user= usr ,passwd= pwd, database="school")
                 cursor = mydb.cursor()
-                cursor.execute("CREATE TABLE IF NOT EXISTS `marks_{ClassSec}` ( roll_no INT(3) AUTO_INCREMENT , Computer INT , Math INT , English INT , Science INT , SocialScience INT , Obtained INT , Percentage INT) ;")
-                cursor.execute("CREATE TABLE IF NOT EXISTS `student_{ClassSec}` ( roll_no INT(3) AUTO_INCREMENT , StudentName VARCHAR(32) NOT NULL , GuardianName VARCHAR(32) NOT NULL , DOB DATE , PRIMARY KEY (roll_no));")
+                cursor.execute("CREATE TABLE IF NOT EXISTS `marks_{ClassSec}` ( roll_no INT(3) AUTO_INCREMENT , Computer INT , Math INT , English INT , Science INT , SocialScience INT , Obtained INT , Percentage INT , PRIMARY KEY (roll_no) ) ;".format(ClassSec=ClassSec))
+                cursor.execute("CREATE TABLE IF NOT EXISTS `student_{ClassSec}` ( roll_no INT(3) AUTO_INCREMENT , StudentName VARCHAR(32) NOT NULL , GuardianName VARCHAR(32) NOT NULL , DOB DATE , PRIMARY KEY (roll_no) );".format(ClassSec=ClassSec))
 
         def manageStudent():
                 #Printing Welcome Message And options For This Program
