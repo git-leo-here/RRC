@@ -9,7 +9,7 @@ from reportlab.platypus import Paragraph , Frame , Table , TableStyle
 
 school = 'ABC Public School'
 school_data = ['Affiliated to CBSE',
-               'Near Science Centre , Rajnagar , Raichok - 12',  ]
+               'Near Science Centre , Rajnagar , Raichok - 12'  ]
 
 
 def runPDF(roll_no):
@@ -22,14 +22,6 @@ def runPDF(roll_no):
         styleSheet = getSampleStyleSheet()
         style = styleSheet['BodyText']
         style.alignment = 1
-        # for i in range(len(school_data)):
-        #     lineText = school_data[i]
-        #     P = Paragraph(lineText, style)
-        #     aW = 500
-        #     aH = 500
-        #     w,h = P.wrap(aW, aH)
-        #     P.drawOn(c, 225, 50 + h*(i+1))
-            # c.drawString(200, 790 - 15*(i+1)  , "{}".format(school_data[i]))
         story1 = []
         for i in range(len(school_data)):
             lineText = school_data[i]
@@ -103,11 +95,12 @@ def runPDF(roll_no):
     c.showPage()
     c.save()
 
-def delete_file():
+def delete_file(roll_no):
     try:
         os.remove("{}".format(roll_no))
     except OSError:
         pass
 
-delete_file()
-hello_world(1)
+# delete_file(1)
+# runPDF(1)
+

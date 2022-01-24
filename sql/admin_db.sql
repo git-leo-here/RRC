@@ -2,7 +2,6 @@ desc student;
 +---------+-------------+------+-----+---------+----------------+
 | Field   | Type        | Null | Key | Default | Extra          |
 +---------+-------------+------+-----+---------+----------------+
-| admno   | int(11)     | NO   | PRI | NULL    | auto_increment |
 | name    | varchar(30) | YES  |     | NULL    |                |
 | fname   | varchar(30) | YES  |     | NULL    |                |
 | class   | varchar(15) | YES  |     | NULL    |                |
@@ -16,13 +15,13 @@ desc marks;
 +---------+-------------+------+-----+---------+-------+
 | Field   | Type        | Null | Key | Default | Extra |
 +---------+-------------+------+-----+---------+-------+
-| admno   | int(11)     | YES  |     | NULL    |       |
 | term    | varchar(20) | YES  |     | NULL    |       |
 | session | varchar(20) | YES  |     | NULL    |       |
-| phy     | int(3)      | YES  |     | NULL    |       |
-| chem    | int(3)      | YES  |     | NULL    |       |
+| comp    | int(3)      | YES  |     | NULL    |       |
 | math    | int(3)      | YES  |     | NULL    |       |
 | eng     | int(3)      | YES  |     | NULL    |       |
-| comp    | int(3)      | YES  |     | NULL    |       |
+| sc      | int(3)      | YES  |     | NULL    |       |
+| ssc      | int(3)      | YES  |     | NULL    |      |
 +---------+-------------+------+-----+---------+-------+
 Yes marks display ka sample query
+# rollno. rakhenge admno. ki jagah
